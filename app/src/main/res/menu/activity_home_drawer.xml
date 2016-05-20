@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    >
+
+    <group android:checkableBehavior="single"
+
+        >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/nav_bookmarks"
+            android:title="Bookmarks"
+
+            />
+
+        <item
+            android:id="@+id/nav_onMap"
+            android:icon="@drawable/nav_onmap"
+            android:title="On Map" />
+        <item
+            android:id="@+id/nav_backuprestore"
+            android:icon="@drawable/nav_backuprestore"
+            android:title="Backup/Restore" />
+
+
+        />
+    </group>
+
+    <item android:title="Communicate"
+
+        >
+        <menu>
+            <item
+                android:id="@+id/nav_people"
+                android:icon="@drawable/nav_sharedwithme"
+                android:title="People" />
+
+        </menu>
+    </item>
+
+</menu>
+

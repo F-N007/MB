@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.fragments.startActivityFrags.LoginFragment"
+    android:background="@color/App_Background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView_Logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="My bookmarks"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal|top" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/Layer_LoginContent"
+        android:gravity="bottom"
+        android:layout_marginTop="25dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_usernameLoginFrag"
+            android:textColor="@color/App_TextColor"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText_passwordLoginFrag"
+            android:textColor="@color/App_TextColor"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember"
+            android:id="@+id/checkBox_remember"
+            android:checked="false"
+            android:textColor="@color/App_TextColor"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/button_loginLoginFrag"
+            android:textColor="@color/App_ButtonTextColor"
+            android:focusable="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="New account?"
+            android:id="@+id/textView_newaccountLoginFrag"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/App_TextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Forgot password?"
+            android:id="@+id/textView_forgotpassLoginFrag"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/App_TextColor"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Exite"
+        android:id="@+id/button_exitLoginFrag"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textColor="@color/App_ButtonTextColor"
+        android:onClick="exiteOnClicked" />
+
+</FrameLayout>
